@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 #Importing Dataset
-data = pd.read_csv("customerspends.csv")
+data = pd.read_csv("customerspends.csv") 
 sns.lmplot("Apparel","Beauty and Healthcare",data=data,fit_reg = False, size=4)
 
 #Normalizing features
@@ -69,5 +69,5 @@ plt.legend()
 plt.show()
 
 
-	
+#So by Elbow Method we have 3 clusters i.e., FashionISta,BeautyObsession, Both.
 
